@@ -224,10 +224,10 @@
             zoom: 16,
             center: new google.maps.LatLng(29.642580252770323, -95.58262622142637),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false,
-            draggable: false,
+            scrollwheel: true,
+            draggable: true,
             disableDoubleClickZoom: true,
-            disableDefaultUI:true
+            disableDefaultUI:false
             /*added scrollwheel:false draggable:false disableDefaultUI:true*/
         };
         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
