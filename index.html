@@ -101,8 +101,9 @@
                             <br /> Stafford, TX 77477
                             <br />
                             <br /> Open 7 Days A Week
-                            <br /> Monday - Saturday: 5:00AM - 1:30PM
-                            <br /> Sunday: 6:00AM - 1:30PM
+                            <br /> Monday - Friday: 5:00AM - 1:30PM
+			    <br /> Saturday: 5:00AM - 1:00PM
+                            <br /> Sunday: 6:00AM - 1:00PM
                             <br /> Tel: <a id="tel" href="tel:281-491-8819">(281)-491-8819</a>
                         </div>
                     </div>
@@ -223,10 +224,10 @@
             zoom: 16,
             center: new google.maps.LatLng(29.642580252770323, -95.58262622142637),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false,
-            draggable: false,
+            scrollwheel: true,
+            draggable: true,
             disableDoubleClickZoom: true,
-            disableDefaultUI:true
+            disableDefaultUI:false
             /*added scrollwheel:false draggable:false disableDefaultUI:true*/
         };
         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
